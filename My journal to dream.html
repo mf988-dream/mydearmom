@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      #message {
+        font-size: 24px;
+        color: crimson;
+        margin-top: 20px;
+        display: none;
+      }
+
+      #momPic {
+        margin-top: 30px;
+        max-width: 400px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p>This is my first website built from scratch.</p>
+
+    <!-- Button with Chinese text -->
+    <button onclick="showAll()">点我</button>
+
+    <!-- Hidden message -->
+    <div id="message">
+      妈妈我爱你, 热爱探索，永远勇敢，热情，璀璨。祝你旅途顺利，我永远为你骄傲！
+    </div>
+
+    <!-- Hidden picture -->
+    <img id="momPic" src="mom.jpg" alt="Mom Picture" />
+
+    <script>
+      function showAll() {
+        document.getElementById("message").style.display = "block";
+        document.getElementById("momPic").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
